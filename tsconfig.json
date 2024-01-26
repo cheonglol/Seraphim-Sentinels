@@ -20,7 +20,6 @@
     "noUnusedParameters": true,
     "incremental": true,
     "noFallthroughCasesInSwitch": true,
-    "outDir": "./dist/",
     "noImplicitAny": true,
   },
   "include": ["src/**/*"],
