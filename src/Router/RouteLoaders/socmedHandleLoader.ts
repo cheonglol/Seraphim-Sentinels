@@ -1,4 +1,10 @@
-export const socmedHandleLoader = () => {
+// import { redirect } from "react-router-dom";
 
-    return undefined;
+export interface ILoaderData_SocmedHandler {
+    referrerAddr: string
+}
+
+export const socmedHandleLoader = async () => {
+    // if (window.document.referrer != "https://l.instagram.com/") { return redirect("/ig") }
+    return { referrerAddr: window.document.referrer } as ILoaderData_SocmedHandler
 }

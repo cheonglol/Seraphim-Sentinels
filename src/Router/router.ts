@@ -2,6 +2,7 @@ import { RouteObject, createBrowserRouter } from "react-router-dom";
 import { ProtectedRoutes } from "./ProtectedRoutes";
 import { LandingView } from "../Views/LandingView";
 import { socmedHandleLoader } from "./RouteLoaders/socmedHandleLoader";
+import { SocmedReferredView } from "../Views/SocmedReferredView";
 
 export const router = createBrowserRouter([
     {
@@ -10,8 +11,8 @@ export const router = createBrowserRouter([
     },
     {
         path: "/socmed-handle",
-        Component: LandingView,
-        loader: socmedHandleLoader()
+        Component: SocmedReferredView,
+        loader: socmedHandleLoader,
     },
     ...ProtectedRoutes.map((route: RouteObject) => {
         return route;

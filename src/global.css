@@ -24,4 +24,24 @@
         font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
             monospace;
     }
+
+    h1 {
+        font-size: x-large;
+    }
+
+    h2 {
+        font-size: larger;
+    }
+
+    h3 {
+        font-size: large;
+    }
+
+    h4 {
+        font-size: medium;
+    }
+
+    h6 {
+        font-size: small;
+    }
 }
