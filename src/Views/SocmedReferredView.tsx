@@ -21,9 +21,9 @@ export const SocmedReferredView = () => {
                 )
 
                 jsConfetti.addConfetti({
-                    emojis: ['😂', '👌🏻', '💯'],
-                    emojiSize: 25,
-                    confettiNumber: 500,
+                    emojis: ['😂', '👌🏻', '💯', '🎉', '🎊', '🥳'],
+                    emojiSize: 125,
+                    confettiNumber: 250,
                 })
             }
         }
