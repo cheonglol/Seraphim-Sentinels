@@ -1,5 +1,4 @@
 const million = require('million/compiler');
-const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const Dotenv = require('dotenv-webpack');
 const path = require('path');
