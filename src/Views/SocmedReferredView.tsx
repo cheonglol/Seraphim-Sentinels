@@ -5,8 +5,10 @@ import {
     getVisitorPublicIpAddr,
 } from '../APIs/GET_visitorPublicIpAddr'
 import { Skeleton } from 'primereact/skeleton'
+import JSConfetti from 'js-confetti'
 
 export const SocmedReferredView = () => {
+    const jsConfetti = new JSConfetti()
     // const loaderData = useLoaderData() as ILoaderData_SocmedHandler
     const [visitorIpAddr, setVisitorIpAddr] = useState<string | undefined>('')
 
@@ -17,6 +19,12 @@ export const SocmedReferredView = () => {
                 setVisitorIpAddr(
                     (data as IAPIResponse_getVisitorPublicIpAddr).ip
                 )
+
+                jsConfetti.addConfetti({
+                    emojis: ['😂', '👌🏻', '💯'],
+                    emojiSize: 25,
+                    confettiNumber: 500,
+                })
             }
         }
         fetchData()
