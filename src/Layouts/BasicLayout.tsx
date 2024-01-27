@@ -18,13 +18,11 @@ export const BasicLayout = ({
 
     return (
         <>
-            <header className="py-4 ">
+            <header className="py-4">
                 {!headerContent ? defaultHeader : headerContent}
             </header>
-            <main className="py-8 min-h-screen ">{mainContent}</main>
-            <footer className="py-6 min-h-[8vh]">
-                {!footerContent ? defaultFooter : footerContent}
-            </footer>
+            <main className="py-8 px-[4vw] min-h-screen ">{mainContent}</main>
+            <footer>{!footerContent ? defaultFooter : footerContent}</footer>
         </>
     )
 }
