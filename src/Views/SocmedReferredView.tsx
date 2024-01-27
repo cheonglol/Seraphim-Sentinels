@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { BasicLayout } from '../Layouts/BasicLayout'
 import {
-    IAPIResponse_getVisitorPublicIpAddr,
+    iAPIResponse_getVisitorPublicIpAddr,
     getVisitorPublicIpAddr,
-} from '../APIs/GET_visitorPublicIpAddr'
+} from '../APIs/VisitorPublicIpAddressAPI'
 import { Skeleton } from 'primereact/skeleton'
 import JSConfetti from 'js-confetti'
 
@@ -17,7 +17,7 @@ export const SocmedReferredView = () => {
             if (!visitorIpAddr) {
                 const data = await getVisitorPublicIpAddr()
                 setVisitorIpAddr(
-                    (data as IAPIResponse_getVisitorPublicIpAddr).ip
+                    (data as iAPIResponse_getVisitorPublicIpAddr).ip
                 )
 
                 jsConfetti.addConfetti({
@@ -37,6 +37,7 @@ export const SocmedReferredView = () => {
                 <div className="flex justify-center align-middle flex-col gap-[1rem] text-center px-5">
                     <img
                         src="https://media.tenor.com/Oas_7V6NajEAAAAe/laugh-point.png"
+                        alt="-"
                         className="mx-auto rounded-lg"
                     />
                     {visitorIpAddr ? (
@@ -50,7 +51,6 @@ export const SocmedReferredView = () => {
                     )}
                 </div>
             }
-            footerContent={<></>}
         />
     )
 }

@@ -1,4 +1,4 @@
-export interface IAPIResponse_getVisitorPublicIpAddr {
+export interface iAPIResponse_getVisitorPublicIpAddr {
     ip: string
 }
 
