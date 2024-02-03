@@ -1,9 +1,10 @@
 import { RouteObject, createBrowserRouter } from "react-router-dom";
 import { ProtectedRoutes } from "./ProtectedRoutes";
 import { LandingView } from "../Views/LandingView";
-import { socmedHandleLoader } from "./RouteLoaders/socmedHandleLoader";
-import { SocmedReferredView } from "../Views/SocmedReferredView";
+
+import { ReferredFromInstagram } from "../Components/ExternallyReferred/ReferredFromInstagram";
 import { ErrorView } from "../Views/ErrorView";
+// import { ExternalReferredLoader } from "./RouteLoaders/ExternalReferredLoader";
 
 export const router = createBrowserRouter([
     {
@@ -13,9 +14,9 @@ export const router = createBrowserRouter([
     },
     // External handle
     {
-        path: "/socmed-handle",
-        Component: SocmedReferredView,
-        loader: socmedHandleLoader,
+        path: "/ext-ref",
+        Component: ReferredFromInstagram,
+        // loader: ExternalReferredLoader,
     },
     {
         path: "/games"
