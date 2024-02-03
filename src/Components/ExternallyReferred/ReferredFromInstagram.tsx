@@ -1,13 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import { BasicLayout } from '../Layouts/BasicLayout'
-import {
-    iAPIResponse_getVisitorPublicIpAddr,
-    getVisitorPublicIpAddr,
-} from '../APIs/VisitorPublicIpAddressAPI'
-import { Skeleton } from 'primereact/skeleton'
 import JSConfetti from 'js-confetti'
+import { Button } from 'primereact/button'
+import { Skeleton } from 'primereact/skeleton'
+import React, { useEffect, useState } from 'react'
+import {
+    getVisitorPublicIpAddr,
+    iAPIResponse_getVisitorPublicIpAddr,
+} from '../../APIs/VisitorPublicIpAddressAPI'
+import { BasicLayout } from '../../Layouts/BasicLayout'
 
-export const SocmedReferredView = () => {
+export const ReferredFromInstagram = () => {
     const jsConfetti = new JSConfetti()
     // const loaderData = useLoaderData() as ILoaderData_SocmedHandler
     const [visitorIpAddr, setVisitorIpAddr] = useState<string | undefined>('')
@@ -49,6 +50,15 @@ export const SocmedReferredView = () => {
                             width="300px"
                         />
                     )}
+                    <Button
+                        rounded
+                        className="bg-blue-500 p-2 max-w-[20vw] text-center mx-auto"
+                        onClick={() => {
+                            window.location.href = '/'
+                        }}
+                    >
+                        Homepage
+                    </Button>
                 </div>
             }
         />
