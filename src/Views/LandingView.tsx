@@ -1,6 +1,15 @@
-import React from "react";
-import { BasicLayout } from "../Layouts/BasicLayout";
+import React from 'react'
+import { BasicLayout } from '../Layouts/BasicLayout'
 
 export const LandingView = () => {
-  return <BasicLayout mainContent={"landingview"} />;
-};
+    return (
+        <BasicLayout
+            mainContent={
+                <>
+                    hey look, its my Twitch Channle,
+                    https://www.twitch.tv/leicestershire70
+                </>
+            }
+        />
+    )
+}
