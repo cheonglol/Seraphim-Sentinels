@@ -2,6 +2,7 @@ import { PrimeIcons } from 'primereact/api'
 import { Menubar } from 'primereact/menubar'
 import { MenuItem } from 'primereact/menuitem'
 import React from 'react'
+import { LoginSignupModalButton } from './LoginSignUpModalButton'
 
 export const Header = () => {
     const menuItems: MenuItem[] = [
@@ -19,6 +20,7 @@ export const Header = () => {
                         🍃
                     </a>
                 }
+                end={<LoginSignupModalButton />}
                 model={menuItems}
                 className="p-4"
             />
