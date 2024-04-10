@@ -1,4 +1,12 @@
-# Getting Started with Create React App
+# My Notes
+
+this is my personal page, can I make it more professional? yes, but no. someone, who gave me an opportunity, who has helped me grow, once told me, "just be yourself". I'll keep those words dearly.
+
+---
+
+_end of my notes, now for react's nonsense._
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -8,10 +16,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 if `npm i` is being a pain-in-the-ass-piece-of-shit, use `npx -p npm@6 npm install`
 
-because yay, 
+because yay,
 
-> ***Downgrade npm** : As a last resort, you could downgrade npm to version 6, which handles peer dependencies differently. To do this without affecting global settings, use npx with a specific npm version like so: `npx -p npm@6 npm install` .*
-
+> **\*Downgrade npm** : As a last resort, you could downgrade npm to version 6, which handles peer dependencies differently. To do this without affecting global settings, use npx with a specific npm version like so: `npx -p npm@6 npm install` .\*
 
 In the project directory, you can run:
 
