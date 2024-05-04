@@ -1,5 +1,5 @@
 import { redirect } from "react-router-dom"
-import { URL_REFERRED_BY_INSTAGRAM } from "../../Constants/URLsConstants"
+import { URL_REFERRED_BY_INSTAGRAM } from "../../Constants/ReferrerURLs"
 
 export interface ILoaderData_ExternalReferred {
     referrerAddr: string
