@@ -10,7 +10,7 @@ export const Header = () => {
     ]
 
     return (
-        <div className="p-4">
+        <div className="py-4 max-w-[90vw] m-auto">
             <Menubar
                 start={
                     <a
