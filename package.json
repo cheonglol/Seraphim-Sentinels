@@ -1,7 +1,7 @@
 {
     "name": "seraphim-sentinels",
     "version": "1.0.0",
-    "description": "bro its for angelhack2024",
+    "description": "bro its for angelhack2024 | problem statement = TODO:",
     "main": "entrypoint.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
