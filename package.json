@@ -1,0 +1,23 @@
+{
+    "name": "seraphim-sentinels",
+    "version": "1.0.0",
+    "description": "bro its for angelhack2024",
+    "main": "entrypoint.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leicester70/Seraphim-Sentinels.git"
+    },
+    "author": "[\"Lester Cheong\",\"Chua Jun Hong\",\"Thomas Tong\", \"Shanice Yeong\"]",
+    "license": "SEE LICENSE IN `./LICENSE`",
+    "bugs": {
+        "url": "https://github.com/leicester70/Seraphim-Sentinels/issues"
+    },
+    "homepage": "https://github.com/leicester70/Seraphim-Sentinels#readme",
+    "dependencies": {
+        "@types/react": "^18.3.1",
+        "@types/react-dom": "^18.3.0"
+    }
+}
