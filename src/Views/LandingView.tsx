@@ -2,8 +2,10 @@ import React from 'react'
 import { BasicLayout } from '../Layouts/BasicLayout'
 import { Card } from 'primereact/card'
 import { Button } from 'primereact/button'
+import ReactPlayer from 'react-player'
 
 // TODO: move each post as its own component under `src\Components\blog`
+// TODO: add tiktok
 
 export const LandingView = () => {
     return (
@@ -47,6 +49,15 @@ export const LandingView = () => {
                                 </a>
                             </div>
                         </Card>
+                    </Card>
+                    <Card title="AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED (diff lvl 4 stfu leave me be IM LONEWOLF-ING MISSIONS)">
+                        <ReactPlayer
+                            url={'https://www.twitch.tv/videos/2143434679'}
+                        >
+                            AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED
+                            (diff lvl 4 stfu leave me be IM LONEWOLF-ING
+                            MISSIONS)
+                        </ReactPlayer>
                     </Card>
                 </div>
             }
