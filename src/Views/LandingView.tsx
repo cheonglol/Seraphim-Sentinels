@@ -3,6 +3,8 @@ import { BasicLayout } from '../Layouts/BasicLayout'
 import { Card } from 'primereact/card'
 import { Button } from 'primereact/button'
 
+// TODO: move each post as its own component under `src\Components\blog`
+
 export const LandingView = () => {
     return (
         <BasicLayout
