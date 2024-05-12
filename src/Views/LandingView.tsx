@@ -105,7 +105,7 @@ export const LandingView = () => {
                     {/* TODO: CONTENT STARTS HERE */}
                     <Card
                         title="PvP with another Singaporean! Sick bro🔥"
-                        subTitle="i think he chill and cool. fights pretty well"
+                        subTitle="i think he chill and cool. fights pretty well. fuck though, i keep getting hit by Drive Impacts... fucking L bro"
                     >
                         <ReactPlayer
                             width="fit"
