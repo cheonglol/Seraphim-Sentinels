@@ -5,7 +5,6 @@ import { Button } from 'primereact/button'
 import ReactPlayer from 'react-player'
 
 // TODO: move each post as its own component under `src\Components\blog` so i dont make this fucking landing page SO LONG TO READ wtf
-// TODO: add tiktok
 
 export const LandingView = () => {
     return (
@@ -23,9 +22,14 @@ export const LandingView = () => {
                                 C'MON THIS IS MY OWN FUCKING SITE!
                                 <br /> LEAVE ME BE!
                             </a>
-                            <br />
-                            (you may not have one, but keep ur judgment to
-                            yourself)
+                            <p>
+                                you may not have one, but keep ur judgment to
+                                yourself - just enjoy my personality...
+                            </p>
+                            <p className="my-4 italic font-black text-red-400">
+                                if you won't be a salty hater yes, i admit, im
+                                gaslighting u
+                            </p>
                         </p>
                         <Card title="My Twitch 📹🎥🗣️💯" className="mt-6">
                             <div>
@@ -49,21 +53,47 @@ export const LandingView = () => {
                                 </a>
                             </div>
                         </Card>
+                        <Card title="My TikTok 🎵🗣️💯" className="mt-6">
+                            <div>
+                                <Button
+                                    link
+                                    onClick={() =>
+                                        window.open(
+                                            'https://www.tiktok.com/@yuzigoesbrrrt/video/7353649238946925840?is_from_webapp=1&sender_device=pc&web_id=7342133434465486343',
+                                            '_blank'
+                                        )
+                                    }
+                                />
+                                <a
+                                    href="https://www.tiktok.com/@yuzigoesbrrrt/video/7353649238946925840?is_from_webapp=1&sender_device=pc&web_id=7342133434465486343"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-button font-bold text-xl"
+                                >
+                                    Go Navigate Yourself to my tiktok profile{' '}
+                                    <br />
+                                    theres a cat video there, omg i believe i've
+                                    hit the algorithm 🔥
+                                </a>
+                            </div>
+                        </Card>
                     </Card>
                     <Card
                         title="AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED"
                         subTitle="(diff lvl 4 stfu leave me be IM LONEWOLF-ING MISSIONS)"
                     >
                         <ReactPlayer
+                            width="fit"
                             controls={true}
                             url={'https://www.twitch.tv/videos/2143434679'}
                         ></ReactPlayer>
                     </Card>
                     <Card
                         title="typical helldiver2 gameplay (not chaotic (real))"
-                        subTitle="i bombed my friend's friend & idek who they are, idek them irl - LOOOL"
+                        subTitle="i bombed my friend's friend & idek who they are, idek them irl - LOOOL | ngl i think they dont like me (i wont take shit personally tho - bite me)"
                     >
                         <ReactPlayer
+                            width="fit"
                             controls={true}
                             url={'https://www.twitch.tv/videos/2143080229'}
                         ></ReactPlayer>
