@@ -6,7 +6,11 @@ import { LoginSignupModalButton } from './LoginSignUpModalButton'
 
 export const HeaderNav = () => {
     const menuItems: MenuItem[] = [
-        { label: 'test', icon: PrimeIcons.ARROW_DOWN, url: '/' },
+        {
+            label: 'test (bro still work in progress lah, wait leh), i think i got so many pages? so much time? no bro.',
+            icon: PrimeIcons.ARROW_DOWN,
+            url: '/',
+        },
     ]
 
     return (
