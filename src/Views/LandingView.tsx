@@ -12,7 +12,7 @@ export const LandingView = () => {
             mainContent={
                 <div className="grid grid-cols-1 sm:grid-cols-0 gap-4 max-w-[90vw] m-auto">
                     <Card className="bg-slate-600">
-                        <h1>My Home Feed</h1>
+                        <h1>My Home Feed & Landing Page</h1>
                         <p>
                             I post whatever the hell i want here on <br />
                             <a
@@ -74,6 +74,30 @@ export const LandingView = () => {
                                     <br />
                                     theres a cat video there, omg i believe i've
                                     hit the algorithm 🔥
+                                </a>
+                            </div>
+                        </Card>
+                        <Card title="My LinkedIn 💼🧑🏻‍💼🥲" className="mt-6">
+                            <div>
+                                <Button
+                                    link
+                                    onClick={() =>
+                                        window.open(
+                                            'https://www.linkedin.com/in/lester-cheong-a29a4a209/',
+                                            '_blank'
+                                        )
+                                    }
+                                />
+                                <a
+                                    href="https://www.linkedin.com/in/lester-cheong-a29a4a209/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-button font-bold text-xl"
+                                >
+                                    this is my linkedin profile, ngl i am
+                                    ashamed how this professional person can
+                                    also be unprofessional (insecurity, im
+                                    self-aware LOL)
                                 </a>
                             </div>
                         </Card>
