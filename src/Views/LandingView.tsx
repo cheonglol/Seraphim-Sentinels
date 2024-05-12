@@ -102,6 +102,7 @@ export const LandingView = () => {
                             </div>
                         </Card>
                     </Card>
+                    {/* TODO: CONTENT STARTS HERE */}
                     <Card
                         title="AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED"
                         subTitle="(diff lvl 4 stfu leave me be IM LONEWOLF-ING MISSIONS)"
