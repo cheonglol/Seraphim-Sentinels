@@ -104,6 +104,16 @@ export const LandingView = () => {
                     </Card>
                     {/* TODO: CONTENT STARTS HERE */}
                     <Card
+                        title="PvP with another Singaporean! Sick bro🔥"
+                        subTitle="i think he chill and cool. fights pretty well"
+                    >
+                        <ReactPlayer
+                            width="fit"
+                            controls={true}
+                            url={'https://www.twitch.tv/videos/2144166592'}
+                        ></ReactPlayer>
+                    </Card>
+                    <Card
                         title="AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED"
                         subTitle="(diff lvl 4 stfu leave me be IM LONEWOLF-ING MISSIONS)"
                     >
