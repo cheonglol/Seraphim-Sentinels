@@ -4,7 +4,7 @@ import { MenuItem } from 'primereact/menuitem'
 import React from 'react'
 import { LoginSignupModalButton } from './LoginSignUpModalButton'
 
-export const Header = () => {
+export const HeaderNav = () => {
     const menuItems: MenuItem[] = [
         { label: 'test', icon: PrimeIcons.ARROW_DOWN, url: '/' },
     ]

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header } from '../Components/Header'
+import { HeaderNav } from '../Components/HeaderNav'
 import { Footer } from '../Components/Footer'
 
 interface Props {
@@ -13,7 +13,7 @@ export const BasicLayout = ({
     mainContent,
     footerContent,
 }: Props) => {
-    const defaultHeader = <Header />
+    const defaultHeader = <HeaderNav />
     const defaultFooter = <Footer />
 
     return (
