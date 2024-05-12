@@ -52,6 +52,7 @@ export const LandingView = () => {
                     </Card>
                     <Card title="AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED (diff lvl 4 stfu leave me be IM LONEWOLF-ING MISSIONS)">
                         <ReactPlayer
+                            controls={true}
                             url={'https://www.twitch.tv/videos/2143434679'}
                         >
                             AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED
