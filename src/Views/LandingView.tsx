@@ -50,25 +50,23 @@ export const LandingView = () => {
                             </div>
                         </Card>
                     </Card>
-                    <Card title="AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED (diff lvl 4 stfu leave me be IM LONEWOLF-ING MISSIONS)">
+                    <Card
+                        title="AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED"
+                        subTitle="(diff lvl 4 stfu leave me be IM LONEWOLF-ING MISSIONS)"
+                    >
                         <ReactPlayer
                             controls={true}
                             url={'https://www.twitch.tv/videos/2143434679'}
-                        >
-                            AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED
-                            (diff lvl 4 stfu leave me be IM LONEWOLF-ING
-                            MISSIONS)
-                        </ReactPlayer>
+                        ></ReactPlayer>
                     </Card>
-                    <Card title="AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED (diff lvl 4 stfu leave me be IM LONEWOLF-ING MISSIONS)">
+                    <Card
+                        title="typical helldiver2 gameplay (not chaotic (real))"
+                        subTitle="i bombed my friend's friend & idek who they are, idek them irl - LOOOL"
+                    >
                         <ReactPlayer
                             controls={true}
-                            url={'https://www.twitch.tv/videos/2143434679'}
-                        >
-                            AFTER A LOSING STREAK I FUCKING FINALLY EXTRACTED
-                            (diff lvl 4 stfu leave me be IM LONEWOLF-ING
-                            MISSIONS)
-                        </ReactPlayer>
+                            url={'https://www.twitch.tv/videos/2143080229'}
+                        ></ReactPlayer>
                     </Card>
                 </div>
             }
