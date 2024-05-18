@@ -1,3 +1,0 @@
-# Seraphim-Sentinels
-
-## Problem Statement
