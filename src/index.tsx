@@ -1,16 +1,40 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import * as serviceWorkerRegistration from './serviceWorkerRegistration';
-import reportWebVitals from './reportWebVitals';
+import { PrimeReactProvider } from "primereact/api";
+import React, { useEffect } from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider } from "react-router-dom";
+import App from "./App";
+import "./global.css";
+import { router } from "./Router/Router";
+import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
+// import reportWebVitals from "./reportWebVitals";
+
+// ### PRIMEREACT CSS ###
+import "primeicons/primeicons.css";
+import "primereact/resources/themes/md-dark-deeppurple/theme.css";
 
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
+
+interface Props {
+  children?: any;
+}
+const MasterProvider = ({ children }: Props) => {
+  useEffect(() => {}, []);
+
+  return (
+    <>
+      {/* <ReduxStoreProvider store={store}> */}
+      <RouterProvider router={router} />
+      <PrimeReactProvider>{children}</PrimeReactProvider>
+      {/* </ReduxStoreProvider> */}
+    </>
+  );
+};
+
 root.render(
   <React.StrictMode>
-    <App />
+    <MasterProvider children={<App />} />
   </React.StrictMode>
 );
 
@@ -22,4 +46,4 @@ serviceWorkerRegistration.unregister();
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// reportWebVitals();
