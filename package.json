@@ -36,6 +36,7 @@
         "workbox-streams": "^6.6.0"
     },
     "devDependencies": {
+        "@types/chart.js": "^2.9.41",
         "dotenv-webpack": "^8.0.1",
         "eslint-webpack-plugin": "^4.1.0",
         "html-webpack-plugin": "^5.6.0",
