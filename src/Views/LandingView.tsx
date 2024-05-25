@@ -7,7 +7,6 @@ import { createClient } from "@supabase/supabase-js";
 // TODO: move each post as its own component under `src\Components\blog` so i dont make this fucking landing page SO LONG TO READ wtf
 
 export const LandingView = () => {
-  //   console.log(process.env.REACT_APP_SUPABASE_PROJECT_URL);
   const supabaseUrl = process.env.REACT_APP_SUPABASE_PROJECT_URL;
   const supabaseKey = process.env.REACT_APP_SUPABASE_ANON_KEY;
   const [isDataFetched, setIsDataFetched] = useState<boolean>(false);
