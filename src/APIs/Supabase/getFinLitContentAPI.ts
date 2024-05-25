@@ -1,6 +1,6 @@
 /* eslint-disable no-throw-literal */
 import { CustomApiErrorMessage } from "../CustomApiErrorMessage";
-import { Supabase_API_Error } from "./SupabaseAPIError";
+import { SupabaseApiError } from "./SupabaseApiError";
 
 export interface FinLitContent {
     ID: number;
@@ -17,7 +17,7 @@ export const getFinLitContentAPI = async (): Promise<FinLitContent[] | CustomApi
             // press ctrl + space and see if u need any of this @thomastmx if ure doing apis
         } as RequestInit)
         if (response.status === 401) {
-            const errorObj: Supabase_API_Error = await response.json();
+            const errorObj: SupabaseApiError = await response.json();
             throw { customMessage: "something wrong, got 401 in response.status", caughtErrorMessage: errorObj } as CustomApiErrorMessage
         }
         const data: FinLitContent[] = await response.json()

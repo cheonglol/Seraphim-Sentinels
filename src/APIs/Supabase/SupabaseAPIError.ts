@@ -1,4 +1,4 @@
-export interface Supabase_API_Error {
+export interface SupabaseApiError {
     message: string;
     hint: string;
 }
