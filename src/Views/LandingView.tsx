@@ -1,6 +1,6 @@
 import { Card } from "primereact/card";
-import ReactPlayer from "react-player";
 import { BasicLayout } from "../Layouts/Base/BasicLayout";
+import RetirementPlanDashboard from "./RetirementPlanDashboard";
 
 // TODO: move each post as its own component under `src\Components\blog` so i dont make this fucking landing page SO LONG TO READ wtf
 
@@ -13,13 +13,7 @@ export const LandingView = () => {
             title="Getting Started"
             subTitle="Using `Prime React` as UI Lib"
           >
-            <ReactPlayer
-              width="fit"
-              controls={true}
-              url={
-                "https://www.youtube.com/watch?v=OrRffCobuts&list=PLC9bp-OHi-WnsnYrHSNwSvKUVDyjXvfqF&index=3"
-              }
-            />
+            <RetirementPlanDashboard />
           </Card>
         </div>
       }
