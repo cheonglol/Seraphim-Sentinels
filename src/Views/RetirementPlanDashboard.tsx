@@ -1,9 +1,9 @@
-import React from "react";
-import { BasicLayout } from "../Layouts/Base/BasicLayout";
 import { Card } from "primereact/card";
+import { DoubleBarChart } from "../Components/RetirementPlanDashboard/DoubleBarChart";
 import { LineChart } from "../Components/RetirementPlanDashboard/LineChart";
 import { LineChartData } from "../Components/RetirementPlanDashboard/LineChartData";
-import { DoubleBarChart } from "../Components/RetirementPlanDashboard/DoubleBarChart";
+import { PolarAreaChart } from "../Components/RetirementPlanDashboard/PolarAreaChart";
+import { BasicLayout } from "../Layouts/Base/BasicLayout";
 
 const lineChartData: LineChartData = {
   labels: ["January", "February", "March", "April", "May", "June", "July"],
@@ -13,6 +13,9 @@ const lineChartData: LineChartData = {
       data: [65, 59, 80, 81, 56, 55, 40],
       fill: false,
       borderColor: "#1d4ed8",
+      pointRadius: 6,
+      pointBackgroundColor: "#1d4ed8",
+      pointHoverRadius: 10,
       tension: 0.4,
     },
   ],
@@ -22,30 +25,44 @@ const doubleBarChartData = {
   labels: ["January", "February", "March", "April", "May", "June", "July"],
   datasets: [
     {
-      label: "My First dataset",
-      backgroundColor: "green",
+      label: "Deposit",
+      backgroundColor: "#047857", // Green
       data: [65, 59, 80, 81, 56, 55, 40],
     },
     {
-      label: "My Second dataset",
-      backgroundColor: "white",
+      label: "Withdraw",
+      backgroundColor: "#b91c1c", //Red
       data: [28, 48, 40, 19, 86, 27, 90],
     },
   ],
+};
+
+const polarAreaChartData = {
+  datasets: [
+    {
+      data: [11, 16, 7, 3, 14],
+      backgroundColor: ["#1e3a8a", "#4c1d95", "#701a75", "#831843"],
+      label: "My dataset",
+    },
+  ],
+  labels: ["Entertainment", "Bills", "Investment", "Others"],
 };
 
 export const RetirementPlanDashboard = () => (
   <BasicLayout
     mainContent={
       <>
-        <Card title="balance">
+        <Card title="Balance">
           <LineChart lineChartData={lineChartData} />
         </Card>
 
-        <Card title="cash flow">
+        <Card title="Cash Flow">
           <DoubleBarChart doubleBarChartData={doubleBarChartData} />
         </Card>
-        <Card title="expense report"></Card>
+
+        <Card title="Expense Report">
+          <PolarAreaChart polarAreaChartData={polarAreaChartData} />
+        </Card>
       </>
     }
   />

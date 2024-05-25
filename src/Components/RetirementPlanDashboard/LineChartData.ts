@@ -3,6 +3,9 @@ interface Dataset {
   data: number[];
   fill?: boolean;
   borderColor: string;
+  pointRadius: number;
+  pointBackgroundColor: string;
+  pointHoverRadius: number;
   tension: number;
 }
 
