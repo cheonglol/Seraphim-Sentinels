@@ -11,6 +11,7 @@ import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 // ### PRIMEREACT CSS ###
 import "primeicons/primeicons.css";
 import "primereact/resources/themes/md-dark-deeppurple/theme.css";
+import { Footer } from "./Components/Navigational/Footer";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -35,6 +36,7 @@ const MasterProvider = ({ children }: Props) => {
 root.render(
   <React.StrictMode>
     <MasterProvider children={<App />} />
+    <Footer />
   </React.StrictMode>
 );
 
