@@ -3,7 +3,6 @@ import { DoubleBarChart } from "../Components/RetirementPlanDashboard/DoubleBarC
 import { LineChart } from "../Components/RetirementPlanDashboard/LineChart";
 import { LineChartData } from "../Components/RetirementPlanDashboard/LineChartData";
 import { PolarAreaChart } from "../Components/RetirementPlanDashboard/PolarAreaChart";
-import { BasicLayout } from "../Layouts/Base/BasicLayout";
 
 const lineChartData: LineChartData = {
   labels: ["January", "February", "March", "April", "May", "June", "July"],
