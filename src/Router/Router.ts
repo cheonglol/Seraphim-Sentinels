@@ -3,6 +3,7 @@ import { ProtectedRoutes } from "./ProtectedRoutes";
 import { LandingView } from "../Views/LandingView";
 
 import { ErrorView } from "../Views/Common/ErrorView";
+import GrowSavingsView from "../Views/GrowSavingsView";
 // import { ExternalReferredLoader } from "./RouteLoaders/ExternalReferredLoader";
 
 export const router = createBrowserRouter([
@@ -12,7 +13,8 @@ export const router = createBrowserRouter([
         ErrorBoundary: ErrorView
     },
     {
-        path: "/games"
+        path: "/grow",
+        Component: GrowSavingsView
     },
     ...ProtectedRoutes.map((route: RouteObject) => {
         return route;
