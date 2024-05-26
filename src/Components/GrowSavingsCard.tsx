@@ -1,14 +1,10 @@
-type GrowSavingsCardProps = {
+type Props = {
   header: string;
   paragraph: string;
   interestRate: number;
 };
 
-export const GrowSavingsCard = ({
-  header,
-  paragraph,
-  interestRate,
-}: GrowSavingsCardProps) => {
+export const GrowSavingsCard = ({ header, paragraph, interestRate }: Props) => {
   return (
     <div className="rounded-xl bg-white mt-6 bg-opacity-15 backdrop-filter backdrop-blur flex flex-col justify-between">
       <h1 className="pt-4 pl-4 pr-4 font-semibold">{header}</h1>

@@ -5,7 +5,17 @@ import { LineChartData } from "../Components/RetirementPlanDashboard/LineChartDa
 import { PolarAreaChart } from "../Components/RetirementPlanDashboard/PolarAreaChart";
 
 const lineChartData: LineChartData = {
-  labels: ["January", "February", "March", "April", "May", "June", "July"],
+  labels: [
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030",
+  ],
   datasets: [
     {
       label: "First Dataset",
