@@ -1,6 +1,7 @@
 import React from "react";
 import { HeaderNav } from "../../Components/Navigational/HeaderNav";
 import { Footer } from "../../Components/Navigational/Footer";
+import BottomNavigation from "../../Components/Navigational/BottomNavigation";
 
 interface Props {
   headerContent?: any | undefined;
@@ -23,6 +24,7 @@ export const BasicLayout = ({
       </header>
       <main className="py-8 px-[4vw] min-h-screen ">{mainContent}</main>
       <footer>{!footerContent ? defaultFooter : footerContent}</footer>
+      <BottomNavigation />
     </>
   );
 };

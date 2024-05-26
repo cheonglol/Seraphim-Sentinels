@@ -50,25 +50,21 @@ const polarAreaChartData = {
 };
 
 export const RetirementPlanDashboard = () => (
-  <BasicLayout
-    mainContent={
-      <>
-        <Card title="Balance">
-          <LineChart lineChartData={lineChartData} />
-        </Card>
+  <>
+    <Card title="Balance">
+      <LineChart lineChartData={lineChartData} />
+    </Card>
 
-        <Card title="Cash Flow">
-          <DoubleBarChart doubleBarChartData={doubleBarChartData} />
-        </Card>
+    <Card title="Cash Flow">
+      <DoubleBarChart doubleBarChartData={doubleBarChartData} />
+    </Card>
 
-        <Card title="Expense Report">
-          <PolarAreaChart polarAreaChartData={polarAreaChartData} />
-        </Card>
+    <Card title="Expense Report">
+      <PolarAreaChart polarAreaChartData={polarAreaChartData} />
+    </Card>
 
-        <BottomNavigation />
-      </>
-    }
-  />
+    <BottomNavigation />
+  </>
 );
 
 export default RetirementPlanDashboard;
