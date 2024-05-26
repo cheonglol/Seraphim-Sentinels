@@ -1,5 +1,6 @@
 import React from "react";
 import { GrowSavingsCard } from "../Components/GrowSavingsCard";
+import BottomNavigation from "../Components/Navigational/BottomNavigation";
 
 export const GrowSavingsView = () => {
   return (
@@ -27,6 +28,7 @@ export const GrowSavingsView = () => {
           />
         </div>
       </div>
+      <BottomNavigation />
     </>
   );
 };
