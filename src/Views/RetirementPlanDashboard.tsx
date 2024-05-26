@@ -18,8 +18,8 @@ const lineChartData: LineChartData = {
   ],
   datasets: [
     {
-      label: "First Dataset",
-      data: [65, 59, 80, 81, 56, 55, 40],
+      label: "Main Account",
+      data: [200, 288.32, 578.32, 510.89, 56, 55, 40, 10, 10],
       fill: false,
       borderColor: "#1d4ed8",
       pointRadius: 6,
