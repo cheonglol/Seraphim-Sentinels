@@ -3,6 +3,7 @@ import { DoubleBarChart } from "../Components/RetirementPlanDashboard/DoubleBarC
 import { LineChart } from "../Components/RetirementPlanDashboard/LineChart";
 import { LineChartData } from "../Components/RetirementPlanDashboard/LineChartData";
 import { PolarAreaChart } from "../Components/RetirementPlanDashboard/PolarAreaChart";
+import { PredictionModalButton } from "../Components/RetirementPlanDashboard/PredictionModalButton";
 
 const lineChartData: LineChartData = {
   labels: [
@@ -19,7 +20,9 @@ const lineChartData: LineChartData = {
   datasets: [
     {
       label: "Main Account",
-      data: [200, 288.32, 578.32, 510.89, 56, 55, 40, 10, 10],
+      data: [
+        110000, 100000, 120000, 135000, 150000, 160000, 170000, 180000, 190000,
+      ],
       fill: false,
       borderColor: "#1d4ed8",
       pointRadius: 6,
@@ -59,15 +62,17 @@ const polarAreaChartData = {
 
 export const RetirementPlanDashboard = () => (
   <div className="p-4 bg-gray-700 flex-row">
-    <Card className="shadow-md mb-5" title="Balance">
+    <Card className="shadow-md mb-5" title="Retirement Balance">
       <LineChart lineChartData={lineChartData} />
+      <PredictionModalButton />
     </Card>
 
-    <Card className="shadow-md mb-5" title="Cash Flow">
+    <Card className="shadow-md mb-5" title="Monthly Cash Flow">
       <DoubleBarChart doubleBarChartData={doubleBarChartData} />
     </Card>
 
-    <Card className="shadow-md mb-5" title="Expense Report">
+    <Card className="shadow-md mb-5" title="Monthly Expense Report">
+      {/* TODO: fix the damn size */}
       <PolarAreaChart polarAreaChartData={polarAreaChartData} />
     </Card>
   </div>
