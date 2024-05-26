@@ -1,13 +1,11 @@
 import { PrimeIcons } from "primereact/api";
 import { Menubar } from "primereact/menubar";
 import { MenuItem } from "primereact/menuitem";
-import { LoginSignupModalButton } from "./LoginSignUpModalButton";
 
 export const HeaderNav = () => {
   const menuItems: MenuItem[] = [
     {
-      label:
-        "test (bro still work in progress lah, wait leh), i think i got so many pages? so much time? no bro.",
+      label: "Seraphim Sentinels",
       icon: PrimeIcons.ARROW_DOWN,
       url: "/",
     },
@@ -24,7 +22,7 @@ export const HeaderNav = () => {
             🍃
           </a>
         }
-        end={<LoginSignupModalButton />}
+        end={<div />}
         model={menuItems}
         className="p-4"
       />

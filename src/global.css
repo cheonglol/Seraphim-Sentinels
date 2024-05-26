@@ -23,6 +23,18 @@
 }
 
 @layer base {
+    * {
+        scrollbar-width: none;
+        /* Firefox */
+        -ms-overflow-style: none;
+        /* Internet Explorer 10+ */
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+        /* Webkit (Chrome, Safari, Opera) */
+    }
+
     body {
         margin: 0;
         font-family: "Lexend Variable";

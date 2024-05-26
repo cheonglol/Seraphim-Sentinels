@@ -3,15 +3,26 @@ import { DoubleBarChart } from "../Components/RetirementPlanDashboard/DoubleBarC
 import { LineChart } from "../Components/RetirementPlanDashboard/LineChart";
 import { LineChartData } from "../Components/RetirementPlanDashboard/LineChartData";
 import { PolarAreaChart } from "../Components/RetirementPlanDashboard/PolarAreaChart";
-import { BasicLayout } from "../Layouts/Base/BasicLayout";
-import BottomNavigation from "../Components/Navigational/BottomNavigation";
+import { PredictionModalButton } from "../Components/RetirementPlanDashboard/PredictionModalButton";
 
 const lineChartData: LineChartData = {
-  labels: ["January", "February", "March", "April", "May", "June", "July"],
+  labels: [
+    "2022",
+    "2023",
+    "2024",
+    "2025",
+    "2026",
+    "2027",
+    "2028",
+    "2029",
+    "2030",
+  ],
   datasets: [
     {
-      label: "First Dataset",
-      data: [65, 59, 80, 81, 56, 55, 40],
+      label: "Main Account",
+      data: [
+        110000, 100000, 120000, 135000, 150000, 160000, 170000, 180000, 190000,
+      ],
       fill: false,
       borderColor: "#1d4ed8",
       pointRadius: 6,
@@ -50,21 +61,21 @@ const polarAreaChartData = {
 };
 
 export const RetirementPlanDashboard = () => (
-  <>
-    <Card title="Balance">
+  <div className="p-4 bg-gray-700 flex-row">
+    <Card className="shadow-md mb-5" title="Retirement Balance">
       <LineChart lineChartData={lineChartData} />
+      <PredictionModalButton />
     </Card>
 
-    <Card title="Cash Flow">
+    <Card className="shadow-md mb-5" title="Monthly Cash Flow">
       <DoubleBarChart doubleBarChartData={doubleBarChartData} />
     </Card>
 
-    <Card title="Expense Report">
+    <Card className="shadow-md mb-5" title="Monthly Expense Report">
+      {/* TODO: fix the damn size */}
       <PolarAreaChart polarAreaChartData={polarAreaChartData} />
     </Card>
-
-    <BottomNavigation />
-  </>
+  </div>
 );
 
 export default RetirementPlanDashboard;

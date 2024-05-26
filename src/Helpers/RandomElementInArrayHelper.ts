@@ -1,0 +1,1 @@
+export const randomIndex = (anyArr: any[]) => Math.floor(Math.random() * anyArr.length)

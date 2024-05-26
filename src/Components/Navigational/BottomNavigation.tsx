@@ -10,11 +10,10 @@ export const BottomNavigation: React.FC = () => {
             to="/"
             className="text-white font-bold mx-2 px-2 py-1 rounded flex items-center"
           >
-            <span className="hidden md:inline-block">Home</span>
             <img
               src="https://i.ibb.co/pJ6WB3T/home.png"
               alt="Home"
-              className="inline-block w-6 h-6 md:hidden"
+              className="inline-block w-6 h-6"
             />
           </Link>
         </div>
@@ -23,11 +22,10 @@ export const BottomNavigation: React.FC = () => {
             to="/fin-lit"
             className="text-white font-bold mx-2 px-2 py-1 rounded flex items-center "
           >
-            <span className="hidden md:inline-block">Invest</span>
             <img
               src="https://i.ibb.co/WWr2qcH/save-money.png"
               alt="Invest"
-              className="inline-block w-6 h-6 md:hidden"
+              className="inline-block w-6 h-6"
             />
           </Link>
         </div>
