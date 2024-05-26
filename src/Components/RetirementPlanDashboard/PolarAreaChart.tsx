@@ -37,11 +37,12 @@ export const PolarAreaChart = ({ polarAreaChartData }: Props) => {
 
   return (
     <div className="card flex justify-content-center">
+      {/* Adjusted style for better mobile responsiveness */}
       <Chart
         type="polarArea"
         data={chartData}
         options={chartOptions}
-        style={{ position: "relative", width: "40%" }}
+        style={{ position: "relative", width: "100%", maxWidth: "400px" }} // Changed width to 100% and added maxWidth for better control
       />
     </div>
   );
