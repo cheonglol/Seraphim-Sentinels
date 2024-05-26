@@ -6,6 +6,7 @@ import FinLitBoilerplate, {
   FinLitSlideProps,
 } from "../Components/FinLiterature/FinLitBoilerplate";
 import { getFinLitSlideContents } from "../Helpers/FinLitStaticContentHelper";
+import BottomNavigation from "../Components/Navigational/BottomNavigation";
 
 export const FinancialLiteratureView = () => {
   const [contentArr, setContentArr] = useState<FinLitSlideProps[] | undefined>(
@@ -38,6 +39,7 @@ export const FinancialLiteratureView = () => {
             />
           );
         })}
+        <BottomNavigation />
       </div>
     );
   } else {

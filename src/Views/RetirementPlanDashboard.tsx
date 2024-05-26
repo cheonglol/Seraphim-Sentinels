@@ -4,6 +4,7 @@ import { LineChart } from "../Components/RetirementPlanDashboard/LineChart";
 import { LineChartData } from "../Components/RetirementPlanDashboard/LineChartData";
 import { PolarAreaChart } from "../Components/RetirementPlanDashboard/PolarAreaChart";
 import { PredictionModalButton } from "../Components/RetirementPlanDashboard/PredictionModalButton";
+import BottomNavigation from "../Components/Navigational/BottomNavigation";
 
 const lineChartData: LineChartData = {
   labels: [
@@ -75,6 +76,7 @@ export const RetirementPlanDashboard = () => (
       {/* TODO: fix the damn size */}
       <PolarAreaChart polarAreaChartData={polarAreaChartData} />
     </Card>
+    <BottomNavigation />
   </div>
 );
 
